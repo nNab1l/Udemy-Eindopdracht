@@ -1,0 +1,130 @@
+.nav__listItem{
+    white-space: nowrap;
+}
+
+.nav__bars{
+    visibility: hidden;
+}
+
+input{
+    width: 75rem;
+    border-radius: 10rem;
+    height: 5rem;
+    border: black 1px solid;
+}
+
+.nav__button1{
+    border: solid 1px black;
+    background: transparent;
+    width: 8rem;
+    height: 4rem;
+}
+
+.nav__button2{
+    border: none;
+    background: black;
+    color: white;
+    width: 8rem;
+    height: 4rem;
+}
+
+.nav__button1:hover{
+    cursor: pointer;
+}
+
+.nav__button2:hover{
+    cursor: pointer;
+}
+
+.nav__button1:hover{
+    background: #eee;
+}
+
+.nav{
+    width: 100%;
+    background: white;
+    display: flex;
+    height: 7rem;
+    align-items: center;
+    color: black;
+    padding: 2rem;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+}
+
+.nav__cart2{
+    font-size: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.nav__cart2{
+    cursor: pointer;
+}
+
+.nav__logo{
+    width: 10rem;
+    height: 4rem;
+}
+
+.input::placeholder{
+    position: relative;
+}
+
+.input:focus{
+    outline: rgb(28, 28, 28);
+}
+
+.nav__search{
+    visibility: hidden;
+}
+
+.nav__cart{
+    visibility: hidden;
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    font-size: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.nav__cart{
+    width: 6rem;
+    height: 6rem;
+    padding-top: 2rem;
+}
+
+
+.header > figure > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.nav__button3{
+    width: 5rem;
+    height: 4rem;
+    background: none;
+    border: 1px solid black;
+}
+
+.nav__button3:hover{
+    cursor: pointer;
+    background: #eee;
+}

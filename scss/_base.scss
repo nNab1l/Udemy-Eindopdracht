@@ -1,0 +1,390 @@
+@use 'variables';
+@use 'mixins';
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__h1{
+        display: flex;
+        margin-left: 13rem;
+        margin-bottom: 2rem;
+    }
+
+    &__h2{
+        display: flex;
+        margin-left: 13rem;
+        margin-bottom: 2rem;
+    }
+
+    &__names{
+        display: flex;
+    }
+
+    &__info{
+        border: rgb(177, 177, 177) 1px solid;
+        width: 83%;
+        position: relative;
+        margin-left: 13rem;
+        margin-top: 2rem;
+        height: 25rem;
+    }
+
+    &__p{
+        padding-left: 3rem;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+
+    &__title{
+        padding: 3rem;
+    }
+
+    &__button{
+        @include mixins.buttonSecond;
+        height: 4rem;
+        width: 12rem;
+        margin-left: 3rem;
+    }
+
+    &__button:hover{
+        cursor: pointer;
+    }
+
+    &__namesList{
+        display: flex;
+        margin-left: 13rem;
+        list-style: none;
+        color: rgb(59, 59, 59);
+
+        &:hover{
+            color: black;
+            cursor: pointer;
+            @include mixins.fontBold
+        }
+    }
+
+    &__namesListfps{
+        display: flex;
+        margin-left: 13rem;
+        list-style: none;
+        color: black;
+        @include mixins.fontBold;
+    }
+}
+
+
+
+
+
+.cats{
+    margin-top: 25rem;
+    background: #eee;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cats__h1{
+    margin-top: 15rem;
+    margin-left: 13rem;
+}
+
+.cats__button{
+    width: 20rem;
+    height: 4rem;
+    @include mixins.buttonSecond;
+    margin-left: 13rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.cats__button:hover{
+    cursor: pointer;
+}
+
+
+.cards{
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.cards__cardWrapper{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.cards__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards__additional{
+    display: flex;
+}
+
+.cards__stars{
+    color: rgb(255, 213, 0);
+}
+
+
+
+.cards__h1{
+    margin-left: 13rem;
+    margin-top: 5rem;
+}
+
+.cards__card{
+    background: black;
+    width: 50rem;
+    height: 15rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    flex-direction: column;
+}
+
+
+
+.section__img{
+    width: 88%;
+    height: 100%;
+}
+
+.section__figure{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.section__card{
+    width: 44rem;
+    height: 18rem;
+    background: white;
+    position: relative;
+    margin-left: 16rem;
+    bottom: 33rem;
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+}
+
+.section__h1{
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.section__p{
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+.cats__headerWrapper{
+    display: flex;
+    gap: 18rem;
+    margin-left: 13rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.cats__list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    color: map-get(variables.$categoryList, "color");
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.cats__listItem{
+    font-size: 2rem;
+    margin-top: 1rem;
+    list-style: none;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    border-bottom: 1px solid rgb(88, 36, 162);
+}
+
+.cats__header{
+    white-space: nowrap;
+}
+
+
+
+
+.spon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10rem;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.spon__h2{
+    margin-bottom: 2rem;
+}
+
+.spon__img{
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+    height: 4rem;
+    object-fit: contain;
+}
+
+.spon__imgWrapper{
+    display: flex;
+    gap: 15rem;
+    margin-top: 5rem;
+}
+
+.ad{
+    height: 40rem;
+    margin-left: 35rem;
+    margin-bottom: 15rem;
+
+    &__wrap{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img{
+        width: 20rem;
+        height: 4rem;
+    }
+
+    &__h2{
+        margin-top: 2rem;
+    }
+
+    &__list{
+        margin-left: 2.5rem;
+    }
+
+    &__topimg{
+        height: 45rem;
+        width: auto;
+        margin-left: 45rem;
+        position: relative;
+        bottom: 44rem;
+    }
+
+    &__bottomimg{
+        height: 45rem;
+        width: auto;
+    }
+
+    &__listItem{
+        margin-top: 2rem;
+    }
+
+    &__button{
+        display: flex;
+        flex-direction: column;
+        width: 18rem;
+        margin-top: 2rem;
+        border: none;
+        height: 4.5rem;
+        justify-content: center;
+        @include mixins.buttonFirst;
+        @include mixins.fontBold
+    }
+
+    &__button2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 15rem;
+        margin-top: 2rem;
+        height: 4.5rem;
+        @include mixins.buttonSecond;
+        @include mixins.fontBold
+    }
+
+    &__buttonWrapper{
+        display: flex;
+        gap: 0.5rem;
+    }
+    
+    &__article{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__h2{
+        margin-bottom: 2rem;
+    }
+    
+    &__textWrapper{
+        margin-left: 7rem;
+    }
+    
+    &__cta{
+        margin-top: 2rem;
+        height: 5rem;
+        width: 28rem;
+        border-radius: 0%;
+        @include mixins.buttonFirst;
+        font-size:1.7rem;
+        @include mixins.fontBold;
+    }
+    
+    &__cta:hover{
+        cursor: pointer;
+    }
+    
+}
+
+
+
+
+
+li span{
+    position: relative;
+    left: 2rem;
+}
+
+
+
+.ad__button:hover{
+    cursor: pointer;
+}
+
+
+
+
+.ad__button2:hover{
+    cursor: pointer;
+    background: #eee;
+}
+
+
+
+.ad__cta:hover{
+    cursor: pointer;
+}
+

@@ -1,0 +1,16 @@
+@mixin fontBold{
+    font-weight: 700;
+}
+
+
+@mixin buttonFirst{
+    background: black;
+    color: white;
+    border: none;
+}
+
+@mixin buttonSecond{
+    background: none;
+    color: black;
+    border: solid 1.5px black;
+}
